@@ -28,15 +28,16 @@ export default class Grid {
                     (greenNeighbours === 3 || greenNeighbours === 6)) {
                         this.grid[i][j].color = 1;
                         this.grid[i][j].greenGenerations += 1;
-                } else if  (prevGen[i][j].color === 1 &&
-                           (greenNeighbours === 0 ||
-                            greenNeighbours === 1 ||
-                            greenNeighbours === 4 ||
-                            greenNeighbours === 5 ||
-                            greenNeighbours === 7 ||
-                            greenNeighbours === 8))
-                                this.grid[i][j].color = 0;
-                }
+                } else if (prevGen[i][j].color === 1)
+                    if (greenNeighbours === 0 ||
+                        greenNeighbours === 1 ||
+                        greenNeighbours === 4 ||
+                        greenNeighbours === 5 ||
+                        greenNeighbours === 7 ||
+                        greenNeighbours === 8)
+                            this.grid[i][j].color = 0;
+                    else this.grid[i][j].greenGenerations++;
+            }
     }
 
     visualizeGrid() {
