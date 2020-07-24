@@ -78,7 +78,7 @@ Print your result in the console.
 0100
 1010
 2, 2, 15
-#expected result: 14 (or 1?)
+#expected result: 14
 ```
 
 ## How to Use
