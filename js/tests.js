@@ -7,10 +7,7 @@ const nextGenBtn = document.querySelector('.next-gen-btn');
 to automaticly test the program based on examples one and two */
 
 export const exampleOne = () => {
-    /* Instantiating a new grid to inherit it's methods, but passing only
-    one argument so the constructor doesn't activate and generate a random grid */
-    const exampleOne = new Grid(3);
-    exampleOne.y = 3;
+    const exampleOne = new Grid(3, 3);
 
     for (var i = 0; i < 3; i++)
         for (var j = 0; j < 3; j++)
@@ -27,8 +24,7 @@ export const exampleOne = () => {
 }
 
 export const exampleTwo = () => {
-    const exampleTwo = new Grid(4);
-    exampleTwo.y = 4;
+    const exampleTwo = new Grid(4, 4);
     exampleTwo.grid[0][0] = new Cell(1);
     exampleTwo.grid[0][1] = new Cell(0);
     exampleTwo.grid[0][2] = new Cell(0);
