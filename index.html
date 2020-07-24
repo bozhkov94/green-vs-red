@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/script.js" type="module"></script> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Green vs Red</title>
+</head>
+<body>
+    <div class="nav-container">
+        <h1 class="title"><span class="green-text">Green</span> vs <span class="red-text">Red</span></h1>
+        <div class="gen-zero-container">
+            <input type="number" placeholder="Width" class="width">
+            <input type="number" placeholder="Height" class="height">
+            <button class="btn gen-zero-btn green red-text"><div class="red-text">Generation </div>Zero</button>
+        </div>
+        <div class="buttons-container">
+            <button class="btn next-gen-btn green red-text disabled" disabled='true'>Next<div class="red-text"> Generation</div></button>
+            <button class="btn example1-btn red green-text"><span class="green-text">Example One</span></button>
+            <button class="btn example2-btn red green-text"><span class="green-text">Example Two</span></button>
+        </div>
+    </div>
+    <div class="board"></div>
+</body>
+</html>
